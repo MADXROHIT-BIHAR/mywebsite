@@ -1,141 +1,206 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MADXROHIT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADXROHIT</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #111, #000);
-      color: #fff;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: white;
+  text-align: center;
+}
 
-    h1 {
-      color: #00ffcc;
-      font-size: 42px;
-      margin-top: 20px;
-      text-shadow: 0 0 15px #00ffcc;
-    }
+/* HEADER */
+h1 {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
 
-    p {
-      opacity: 0.9;
-    }
+/* SECTION TITLE */
+h2 {
+  color: #00ffcc;
+  margin-top: 30px;
+}
 
-    h2 {
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
-    h3 {
-      color: #aaa;
-      font-weight: normal;
-    }
+.box {
+  background: #111;
+  border: 1px solid #00ffcc;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 120px;
+  box-shadow: 0 0 10px #00ffcc33;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+/* APPS GRID */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(0,255,204,0.3);
-      border-radius: 15px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 0 15px rgba(0,255,204,0.1);
-      backdrop-filter: blur(8px);
-    }
+.app-card {
+  background: #111;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-    }
+.app-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffcc55;
+  border-color: #00ffcc;
+}
 
-    .stat-box {
-      background: rgba(0,0,0,0.4);
-      border: 1px solid #00ffcc;
-      border-radius: 12px;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      color: #00ffcc;
-      box-shadow: 0 0 10px #00ffcc33;
-    }
+.app-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #00ffcc;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
 
-    ul li {
-      padding: 8px;
-      margin: 5px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 8px;
-      border: 1px solid #333;
-    }
+/* CONNECT */
+.connect {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
 
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: gray;
-      padding: 20px;
-    }
-  </style>
+.connect a {
+  background: #111;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #00ffcc;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.connect a:hover {
+  background: #00ffcc;
+  color: black;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<h1>MADXROHIT</h1>
+<p>HACKING THE SYSTEM...</p>
 
-    <h1>MADXROHIT</h1>
-    <p>HACKING THE SYSTEM...</p>
+<h2>Complete Learning Platform</h2>
+<p>Free For All Apps</p>
 
-    <h2>Complete Learning Platform Site</h2>
-    <p>Free For All</p>
+<!-- STATS -->
+<div class="stats">
+  <div class="box">22 Apps</div>
+  <div class="box">20K+ Users</div>
+  <div class="box">24/7 Support</div>
+</div>
 
-    <h3>Access all premium educational applications in one place.</h3>
+<!-- ABOUT -->
+<h2>About Developer</h2>
+<p>MADXROHIT | Bihar | Class 12th</p>
 
-    <!-- STATS -->
-    <div class="card stats">
-      <div class="stat-box">22 Premium Apps</div>
-      <div class="stat-box">20K+ Users</div>
-      <div class="stat-box">24/7 Support</div>
-    </div>
+<!-- SKILLS -->
+<h2>Skills</h2>
+<p>HTML | CSS | JS | UI/UX | Python</p>
 
-    <!-- ABOUT -->
-    <div class="card">
-      <h2>About Developer</h2>
-      <p>MADXROHIT</p>
-      <p>Class 12th (PCMB)</p>
-      <p>Bihar, India</p>
-      <p>Founder - MADXROHIT</p>
-    </div>
+<!-- PREMIUM APPS -->
+<h2>Premium Apps</h2>
 
-    <!-- SKILLS -->
-    <div class="card">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>UI/UX</li>
-        <li>App Development</li>
-        <li>Python</li>
-      </ul>
-    </div>
+<div class="apps">
 
-    <footer>
-      © COPYRIGHT PROTECTED | FREE FOR ALL
-    </footer>
-
+  <div class="app-card">
+    <p>Physics Wallah</p>
+    <a class="btn" href="https://www.pw.live" target="_blank">Open</a>
   </div>
 
+  <div class="app-card">
+    <p>Unacademy</p>
+    <a class="btn" href="https://unacademy.com" target="_blank">Open</a>
+  </div>
+
+  <div class="app-card">
+    <p>Classplus</p>
+    <a class="btn" href="https://classplusapp.com" target="_blank">Open</a>
+  </div>
+
+  <div class="app-card">
+    <p>Testbook</p>
+    <a class="btn" href="https://testbook.com" target="_blank">Open</a>
+  </div>
+
+  <div class="app-card">
+    <p>Disha Classes</p>
+    <a class="btn" href="#" target="_blank">Open</a>
+  </div>
+
+  <div class="app-card">
+    <p>GK GS Masti</p>
+    <a class="btn" href="#" target="_blank">Open</a>
+  </div>
+
+
+<div class="app-card">
+  <p>Gyanbindu</p>
+  <a class="btn" href="#" target="_blank">Open</a>
+</div>
+
+<div class="app-card">
+  <p>KGS</p>
+  <a class="btn" href="#" target="_blank">Open</a>
+</div>
+
+<div class="app-card">
+  <p>Rojgar with Aniket</p>
+  <a class="btn" href="#" target="_blank">Open</a>
+</div>
+<h2>Connect With Us</h2>
+<!-- CONNECT WITH US -->
+
+<div class="connect">
+
+  <a href="https://wa.me/" target="_blank">WhatsApp</a>
+
+  <a href="https://t.me/" target="_blank">Telegram</a>
+
+  <a href="https://instagram.com/" target="_blank">Instagram</a>
+
+  <a href="https://youtube.com/" target="_blank">YouTube</a>
+
+</div>
+
+<!-- FOOTER -->
+<p style="margin:30px; color:gray;">
+© COPYRIGHT PROTECTED | MADXROHIT
+</p>
+
 </body>
-</html>
+</html<
