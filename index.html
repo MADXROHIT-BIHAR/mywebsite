@@ -1,0 +1,622 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MADXROHIT ALL APP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(135deg,#020617,#0f172a,#1d4ed8);
+
+min-height:100vh;
+color:white;
+
+}
+
+
+/* HEADER */
+
+header{
+
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+box-shadow:0 0 25px #000;
+
+}
+
+header h1{
+
+font-size:32px;
+color:#38bdf8;
+
+}
+
+
+header p{
+
+color:#ddd;
+margin-top:8px;
+
+}
+
+
+/* SEARCH */
+
+.search-area{
+
+padding:25px;
+text-align:center;
+
+}
+
+
+.search-area input{
+
+width:90%;
+max-width:600px;
+
+padding:15px 20px;
+
+border-radius:50px;
+border:none;
+outline:none;
+
+background:#111827;
+color:white;
+
+font-size:16px;
+
+box-shadow:0 0 20px rgba(56,189,248,.4);
+
+}
+
+
+/* APP CONTAINER */
+
+.container{
+
+max-width:1200px;
+margin:auto;
+
+padding:25px;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+/* CARD */
+
+.card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:25px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 0 30px rgba(56,189,248,.5);
+
+}
+
+
+/* ICON */
+
+.card img{
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #38bdf8;
+
+margin-bottom:15px;
+
+}
+
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+padding:12px 30px;
+
+background:#38bdf8;
+
+color:#020617;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+background:white;
+
+}
+
+
+/* POPUP */
+
+.popup{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:100%;
+
+width:100%;
+
+background:rgba(0,0,0,.8);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:9999;
+
+}
+
+
+.popup-box{
+
+width:90%;
+
+max-width:400px;
+
+background:#111827;
+
+padding:30px;
+
+border-radius:25px;
+
+text-align:center;
+
+position:relative;
+
+animation:zoom .5s;
+
+}
+
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.5);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+.close{
+
+position:absolute;
+
+right:15px;
+
+top:10px;
+
+font-size:25px;
+
+cursor:pointer;
+
+}
+
+
+.popup a{
+
+display:block;
+
+padding:13px;
+
+border-radius:50px;
+
+margin-top:15px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+.telegram{
+
+background:#0088cc;
+
+}
+
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🚀 MADXROHITBIHAR ALL APP</h1>
+
+<p>Premium Educational Platform</p>
+
+</header>
+
+
+
+<div class="search-area">
+
+<input id="search"
+placeholder="🔍 Search App...">
+
+</div>
+
+
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<div class="close" onclick="closePopup()">❌</div>
+
+<h2>Welcome ❤️</h2>
+
+<p>
+Join Our Educational Community
+</p>
+
+
+<a class="telegram"
+href="https://t.me/+uFVb_9x-3qllNGQ1">
+
+📢 Telegram
+
+</a>
+
+
+<a class="whatsapp"
+href="#">
+
+💬 WhatsApp
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="container" id="apps">
+<!-- ================= APP CARDS ================= -->
+
+
+<!-- APP 1 -->
+
+<div class="card">
+
+<img src="https://i.postimg.cc/fTfdSHbT/image-search-1783668281136.png" alt="Rojgaar with Aniket">
+
+<h2>📘 Rojgaar with Aniket</h2>
+
+<p>
+Government Jobs, Admit Card, Result,
+Latest Updates and Career Information.
+</p>
+
+<a href="https://allinonex.freedev.app/tkk/home.html?domainId=8768" class="btn" target="_blank">
+Open App
+</a>
+
+</div>
+
+
+
+<!-- APP 2 -->
+
+<div class="card">
+
+<img src="https://i.postimg.cc/mDY9k6FD/image-search-1783924985457.jpg" alt="Khan Global Studios">
+
+<h2>🎓 Khan Global Studios</h2>
+
+<p>
+Online Classes, Study Material,
+Mock Tests and Competitive Exam Preparation.
+</p>
+
+<a href="https://kgsfreebatchall.vercel.app/" class="btn" target="_blank">
+Open App
+</a>
+
+</div>
+
+
+
+<!-- APP 3 -->
+
+<div class="card">
+
+<img src="https://i.postimg.cc/Y05VjPFS/image-search-1783787690252.png" alt="GYANBINDU">
+
+<h2>📚 GYANBINDU</h2>
+
+<p>
+Notes, PDFs, Quiz, Practice Sets
+and Educational Content.
+</p>
+
+<a href="https://gyanbindu.codxraj.site" class="btn" target="_blank">
+Open App
+</a>
+
+</div>
+
+
+
+<!-- APP 4 -->
+
+<div class="card">
+
+<img src="https://i.postimg.cc/Y0TssPqh/image-search-1783788552807.png" alt="ASSHA Official">
+
+<h2>🏆 ASSHA Official</h2>
+
+<p>
+Daily Learning Content,
+Exam Preparation and Updates.
+</p>
+
+<a href="https://allinonex.freedev.app/tkk/home.html?domainId=8630" class="btn" target="_blank">
+Open App
+</a>
+
+</div>
+
+
+
+<!-- APP 5 -->
+
+<div class="card">
+
+<img src="https://i.postimg.cc/MphZTcLR/image-search-1783742533521.jpg" alt="Sachinacademy">
+
+<h2>🎯 Sachinacademy</h2>
+
+<p>
+Best Online Classes,
+Courses, Notes and Exam Guidance.
+</p>
+
+<a href="https://sachinclassex1.vercel.app" class="btn" target="_blank">
+Open App
+</a>
+
+</div>
+
+
+</div>
+<!-- ================= FOOTER ================= -->
+
+<footer style="
+margin-top:50px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border-top:1px solid rgba(255,255,255,.15);
+">
+
+<h2>🚀 MADXROHIT ALL APP</h2>
+
+<p style="color:#ccc;margin-top:10px;">
+One Platform • All Educational Apps ❤️
+</p>
+
+<div style="margin-top:15px;">
+
+<a href="https://t.me/MADXROHITBIHAR"
+style="
+display:inline-block;
+background:#0088cc;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+margin:5px;">
+Telegram
+</a>
+
+
+<a href="#"
+style="
+display:inline-block;
+background:#25D366;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+margin:5px;">
+WhatsApp
+</a>
+
+</div>
+
+
+<p style="
+margin-top:20px;
+color:#aaa;
+font-size:14px;
+">
+© 2026 MADXROHIT ALL APP | All Rights Reserved
+</p>
+
+</footer>
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+
+// POPUP CLOSE BUTTON
+
+function closePopup(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+
+
+// AUTO CLOSE POPUP AFTER 5 SECOND
+
+setTimeout(function(){
+
+document.getElementById("popup").style.display="none";
+
+},5000);
+
+
+
+
+// SEARCH FUNCTION
+
+let search =
+document.getElementById("search");
+
+
+search.addEventListener("keyup",function(){
+
+
+let value =
+search.value.toLowerCase();
+
+
+
+let cards =
+document.querySelectorAll(".card");
+
+
+
+cards.forEach(function(card){
+
+
+let text =
+card.innerText.toLowerCase();
+
+
+
+if(text.includes(value)){
+
+
+card.style.display="block";
+
+
+}
+
+else{
+
+
+card.style.display="none";
+
+
+}
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
